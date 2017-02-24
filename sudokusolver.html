@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Game-Info</title>
+    <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+</head>
+<body>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <h1 class="header center orange-text animated bounceInUp">Game - Info</h1>
+      <div class="row center">
+        <h5 class="header col s12 light animated wobble">A Git Tutorial Project by GNU/Linux Users' Group, NIT Durgapur</h5>
+      </div>
+        
+        <br> <br><br>
+    </div>
+  </div>
+    <br>
+    <br>
+     <div class="container" id= "details">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text">Java - Sudoku Solver </h2><br><br><p class="light"><br><br><br>
+              <h3 class = "left orange-text">Rules of the Game</h3><br><br><br><br><br><br>
+              <p>Sudoku is a single-player mind game. "The objective is to fill a 9×9 grid with digits 1 to 9, so that each column, each row, and each of the nine 3×3 sub-grids (also called "boxes", "blocks", "regions", or "sub-squares") contains all of the digits from 1 to 9. The puzzle setter provides a partially completed grid, which for a well-posed puzzle has a unique solution.</p>
+              
+              
+              <h3 class = "left orange-text">Graphical Display</h3><br><br><br><br><br><br>
+              <p> Start with the GUI for display. The GUI codes is simple. You can simply use a 9x9 JTextFields arranged in a 9x9 GridLayout.
+                  The steps for producing the display are:
+                  Set the JFrame's content-pane to 9×9 GridLayout. Create 9×9 JTextFields (called tfCells) and add to the content-pane. The JTextFields shall contain the string "1" to "9" (the number from the puzzle or the number guessed) or empty string (for blank cells).
+                  Initialize the game by reading in an input puzzle (int[9][9] puzzle) with blank cells (handled by boolean[9][9] masks), and populate the tfCells arrays. Set the non-empty cells to non-editable containing the number from the puzzle; and set the empty cells to editable containing an empty string.</p><br>
+              <h3 class = "left orange-text">Event Handling</h3><br><br><br><br><br><br>
+                <p> Next, we shall program the event handling.
+                We shall use a common instance of a Named Inner Class (called InputListener) as the ActionEvent listener for "all" the editable JTextFields. Hence, in the actionPerformed(), we need to identify the particular JTextField (in terms of row and col) that trigger the event. You could use the ActionEvent.getSource() method to retrieve the source object that has fired the event and compare the object with all the 9×9 JTextFields.
+                    Place the inner class at [TODO 2].</p><br>
+                                   <h3 class = "left orange-text">Other Hints</h3><br><br><br><br><br><br>
+                                    <p> A good Sudoku engine shall accept any "valid" number at the time of input (no duplicate in row, column and sub-grid), but signal a conflict whenever it is detected. Highlight the conflicting cells.
+                    Re-organize your codes, with methods such as initGame(), getPuzzle(), etc. Better still, apply your OO knowledge to write a separate class called Puzzle, and etc.
+                    Beautify your graphical interface, e.g., color, font, layout, etc.
+                    Choice of puzzles and difficulty levels.
+                    Create a status bar (JTextField at the south zone of BorderLayout) to show the messages (e.g., number of cells remaining) (google "java swing statusbar").
+                    Create a menu bar for options such as "File" ("New Game", "Reset Game", "Exit"), "Options", and "Help" (Use JMenuBar, JMenu, and JMenuItem classes).
+                    Timer (pause/resume), score, progress bar.
+                    A side panel for command, display, strategy?
+                    Automatic puzzle generation with various difficulty level.
+                    The sample program processes ActionEvent of the JTextField, which requires user to push the ENTER key. Try KeyEvent with keyTyped() handler; or other means that does not require pushing of ENTER key.
+                    Sound effect, background music, enable/disable sound?
+                    High score and player name?
+                    Hints and cheats (reveal a cell, or reveal all cells with number n)?
+                    Choice of display "theme"?
+                    Use of images and icons?
+                    ......</p>
+              
+                 
+                 
+          </div>
+          </div></div>
+          <footer class="page-footer blue" id = "footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+            <img src = "NIT_Durgapur_Logo.png" align ="left" class = "img">
+            <h5 class="white-text"><a class = 'white-text'href="http://www.nitdgplug.org">GNU/Linux Users' Group, NIT Durgapur</a></h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+            
+        </div>
+      </div>
+    </div>
+              <br><br>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://www.nitdgplug.org">GNU/Linux Users' Group, NIT Durgapur</a>
+      </div>
+  </footer>
+                <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+
+    </body>
+</html>
