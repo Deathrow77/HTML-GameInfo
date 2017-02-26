@@ -1,7 +1,6 @@
-#jumbo{ 
+#jumbo { 
            background:url("original.jpg");
 		   background-size:100%;
-		   background-repeat: no-repeat;
 }
 
 .white {
