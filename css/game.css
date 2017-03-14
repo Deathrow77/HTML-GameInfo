@@ -1,0 +1,18 @@
+body {
+    background-image: url("../images/original.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#jumbo {
+    background-color: transparent;
+    color: white;
+    background-size: 100%;
+}
+
+.white {
+    color:white;
+}
+.button{
+	margin-top:40%;
+}
